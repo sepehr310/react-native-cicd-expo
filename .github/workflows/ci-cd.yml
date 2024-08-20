@@ -6,9 +6,9 @@ on:
         - main
 
 jobs:
-    checkout:
-        - name: Checkout
-        uses: actions/checkout@v2
+    
+    - name: Checkout
+      uses: actions/checkout@v2
 
     install-dep:
         - uses: actions/setup-node@master
@@ -20,7 +20,7 @@ jobs:
         - name: Run test
           run: yarn test-ci
 
-          
+
 
     
 
