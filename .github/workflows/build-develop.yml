@@ -13,7 +13,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - uses: actions/setup-node@master
-    - uses: c-hive/gha-yarn-cache@v1
+    # - uses: c-hive/gha-yarn-cache@v1
 
     - name: Install node modules
       run: |
@@ -21,7 +21,7 @@ jobs:
 
     - name: Run test
       run: |
-        yarn run action-test
+        yarn run test
 
     - name: Cache Gradle Wrapper
       uses: actions/cache@v2
