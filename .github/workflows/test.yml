@@ -6,7 +6,8 @@ on:
         - master
   push :
     branches:
-      - develop
+      # - develop
+      - master
 jobs:
     test-ci:
         name: Test react native
