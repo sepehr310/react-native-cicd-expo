@@ -23,6 +23,9 @@ jobs:
     - name: Run test
       run: npm run action-test
 
+    - name: init Gradel
+      uses: gradle/actions/setup-gradle@v3
+
     - name: Cache Gradle Wrapper
       uses: actions/cache@v2
       with:
